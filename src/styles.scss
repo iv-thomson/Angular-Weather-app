@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import './app/scss/variables';
+@import './app/scss/common.scss';
+@import './app/shared/shared.scss';
+@import './app/app.component.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #555;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}

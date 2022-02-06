@@ -1,0 +1,50 @@
+.card {
+    background: #fefefe;
+    box-shadow: $box-shadow;
+    border: $color-white 1px solid;
+    border-radius: 20px;
+    overflow: hidden;
+
+    &__header {
+        gap: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__body {
+        border-radius: 20px;
+        padding: 32px;
+    }
+
+    &__section {
+        &--dark {
+            background-color: $color-white-d1;
+        }
+    }
+
+    &--size-s {
+        .card__body {
+            padding: 16px;
+        }
+    }
+
+    &--size-m {
+        .card__body {
+            padding: 24px;
+        }
+    }
+
+    &--size-l {
+        .card__body {
+            padding: 32px;
+        }
+    }
+
+    &--hoverable {
+        &:hover {
+            background: $color-white-d2;
+        }
+    }
+}
+

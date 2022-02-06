@@ -1,0 +1,41 @@
+.search {
+  position: relative;
+
+  &__input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    padding-right: 32px;
+  }
+
+  &__options {
+    @include scrollbar;
+    top: 16px;
+    position: absolute;
+    z-index: 3;
+    height: 300px;
+    overflow: auto;
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+    border: 1ox solid $color-gray;
+
+    li {
+      font-size: 12px;
+      padding: 16px 24px;
+    }
+  }
+
+  &__icon {
+    margin-right: 8px;
+  }
+
+  &__loader {
+    top: 50%;
+    right: 16px;
+    transform: translate(0, -50%);
+    position: absolute;
+  }
+}

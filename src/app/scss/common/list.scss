@@ -1,0 +1,18 @@
+.list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+
+    li {
+        padding: 8px;
+        cursor: pointer;
+        width: 100%;
+
+        &:hover {
+            background-color: $color-primary;
+            color: $color-white;
+        }
+    }
+}

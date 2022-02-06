@@ -1,0 +1,12 @@
+<div class="search">
+    <div class="search__input-wrapper">
+        <app-icon [name]="searchIconName" [size]="searchIconSize" class="search__icon" ></app-icon>
+        <input class="search__input input" [value]="value" (input)="onInput($event)" (focus)="onSearchFocus()" />
+        <app-loader *ngIf="isLoading" class="search__loader" [size]="searchLoaderSize"></app-loader>
+    </div>
+    <ul *ngIf="isOptionListOpen" class="search__options list">
+        <li *ngFor="for let option of displayedOptionList" (key)="option.key" class="search__option" (click)="onOptionSelect(option)">
+            {{ option.label }}
+        </li>
+    </ul>
+</div>

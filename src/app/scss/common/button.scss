@@ -1,0 +1,53 @@
+.button {
+    padding: 8px 16px;
+    background: $color-primary;
+    color: $color-white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+
+    &:hover{
+        background-color: $color-primary-l1;
+
+        line {
+            stroke: $color-white;
+        }
+    }
+
+    &:disabled {
+        background-color: $color-gray-l1;
+        cursor: not-allowed;
+
+        &:hover {
+            background-color: $color-gray-l1;
+        }
+    }
+
+    &--xs {
+        padding: 2px;
+    }
+
+    &--s {
+        padding: 4px;
+    }
+
+    &--l {
+        padding: 16px 32px;
+    }
+
+    &--color-error {
+        background: $color-error;
+
+        &:hover{
+            background-color: $color-error-l1;
+        }
+    }
+
+    &--color-success {
+        background: $color-success;
+
+        &:hover{
+            background-color: $color-success-l1;
+        }
+    }
+}
