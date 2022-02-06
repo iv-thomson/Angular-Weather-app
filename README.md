@@ -1,5 +1,7 @@
 # Weather App in Angular
 
+Created this angular app to learn basics of this framework. Didn't use streams instead of services yet. Will try net time.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
 
 ## Development server
