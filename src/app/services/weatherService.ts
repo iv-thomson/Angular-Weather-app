@@ -9,7 +9,7 @@ import { FetchService } from './fetchService';
 export class WeatherService {
   private apiKey = weatherApiKey;
 
-  private baseUrl: string = 'http://api.weatherapi.com/v1';
+  private baseUrl: string = 'https://api.weatherapi.com/v1';
 
   public constructor(private fetchService: FetchService) { }
 
