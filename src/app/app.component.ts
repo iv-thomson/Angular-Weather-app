@@ -90,7 +90,6 @@ export class AppComponent implements OnInit {
   }
 
   public onWeatherRemove(index: number): void {
-    console.log(this.selectedWeather === this.weatherList[index]);
     if (this.selectedWeather === this.weatherList[index]) {
       this.selectedWeather = null;
     }
